@@ -75,7 +75,7 @@ padding: 0;
 .grid-item-container p{
     font-size: 24px;  /*1366x1.76=24.04*/
     font-family: 'Open Sans', sans-serif;
-    margin: 20px 0 30px;
+    margin: 40px 0 50px;
 }
 .grid-item-container button{
     background-color: #FFB343;
@@ -208,13 +208,23 @@ padding: 0;
     }
 }
 @media screen and (max-width: 700px){
+    .navbar{
+        position: static;
+        opacity: 100%;
+    }
     .grid-item-container h1{
-        font-size: 6vw;
+        font-size:60px;
         
+    }
+    .grid-item-container p{
+        font-size: 18px;
     }
     .grid-item-container{
        position: relative;
        top: 10vw;
+    }
+    .grid-item-container button{
+        width: 25vw;
     }
 
 }

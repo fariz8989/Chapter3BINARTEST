@@ -72,7 +72,7 @@ padding: 0;
     font-family: 'Bebas Neue', cursive;
 }
 .grid-item-container p{
-    font-size: 1.32vw;  /*1366x1.76=24.04*/
+    font-size: 24px;  /*1366x1.76=24.04*/
     font-family: 'Open Sans', sans-serif;
     margin: 40px 0 50px;
 }
@@ -82,7 +82,7 @@ padding: 0;
     padding: 10px;
     width: 20vw;
     font-weight: bold; 
-    font-size: 1.18vw; /*1366x1.18=16.1*/
+    font-size: 16px; /*1366x1.18=16.1*/
 }
 /*THE GAMES*/
 .the-games-container{
@@ -111,10 +111,10 @@ padding: 0;
    
 }
 .the-games-item-container p{
-    font-size: 1.32vw; /*18.003*/
+    font-size: 18px; /*18.003*/
 }
 .the-games-item-container h2{
-    font-size: 5.856vw;
+    font-size: 80px;
     font-family: 'Bebas Neue', cursive;
     font-weight: bold;
 }
@@ -152,13 +152,13 @@ padding: 0;
     padding-left: 80px;
 }
 .features-item-container h2{
-    font-size: 5.856vw;
+    font-size: 80px;
     font-weight: 400;
     font-family: 'Bebas Neue', cursive;
     
 }
 .features-item-container p{
-    font-size: 1.32vw; /*18.03*/
+    font-size: 18px; /*18.03*/
 }
 /*RESPONSIVE DESIGN*/
 @media screen and (max-width:1200px){
@@ -193,7 +193,7 @@ padding: 0;
         margin: auto;
     }
     .the-games-item-container h2{
-        font-size: 8.29vw;/*1366x8.29=60.01*/
+        font-size: 60px;/*1366x8.29=60.01*/
     }
     .the-games-carousel{
         grid-column: 1/2;

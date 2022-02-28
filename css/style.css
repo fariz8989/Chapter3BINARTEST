@@ -1,0 +1,214 @@
+.container-fluid{
+padding: 0;
+}
+.navbar{
+    opacity: 0.8;
+   position: fixed;
+   width: 100%;
+   background-color: black;
+   padding: 5px 0;
+   z-index: 1;
+}
+.navbar-brand{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin:  0 6rem;
+    
+}
+.navbar-brand:hover{
+    color: white;
+}
+.navbar-brand, .nav-item a{
+    color: white;
+}
+.left-navbar{
+    margin-left: 2rem;
+}
+.left-navbar .nav-item{
+    padding: 0.5rem 2rem;
+}
+.right-navbar{
+    margin-right: 5rem;
+}
+.right-navbar .nav-item{
+    padding: 0.5rem 1rem;
+}
+.nav-link{
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Open Sans',sans-serif;
+}
+/*MAIN SCREEN*/
+.main-background{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.main-screen-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+.main-screen{
+    grid-row: 1/4;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid-item-container{
+    color: white;
+    padding: 0 0 50px;
+}
+.grid-item-container h1{
+    font-weight: bold;
+    font-size: 5.856vw; /*1366x5.856=*79.99*/
+    margin: 0 0 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+.grid-item-container p{
+    font-size: 1.32vw;  /*1366x1.76=24.04*/
+    font-family: 'Open Sans', sans-serif;
+    margin: 40px 0 50px;
+}
+.grid-item-container button{
+    background-color: #FFB343;
+    border: none;
+    padding: 10px;
+    width: 20vw;
+    font-weight: bold; 
+    font-size: 1.18vw; /*1366x1.18=16.1*/
+}
+/*THE GAMES*/
+.the-games-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  
+}
+.the-games-background{
+    grid-column: 1/4;
+    grid-row: 1/4;
+    width: 100%;
+    height: 100%;
+}
+.the-games-text{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    margin: 0 60px;
+}
+.the-games-item-container{
+    color: white;
+   
+}
+.the-games-item-container p{
+    font-size: 1.32vw; /*18.003*/
+}
+.the-games-item-container h2{
+    font-size: 5.856vw;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+}
+.the-games-carousel{
+    grid-column: 2/4;
+    grid-row: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+   
+    margin-left: 100px;
+}
+
+/*FEATURES*/
+.features-container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+
+}
+.features-background{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    width: 100%;
+    height: 100%;
+}
+.features-text{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: white;
+}
+.features-item-container{
+    position: relative;
+    top: 25%;
+    padding-left: 80px;
+}
+.features-item-container h2{
+    font-size: 5.856vw;
+    font-weight: 400;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+.features-item-container p{
+    font-size: 1.32vw; /*18.03*/
+}
+/*RESPONSIVE DESIGN*/
+@media screen and (max-width:1200px){
+    .right-navbar{
+        
+        margin-right: 0;
+    }
+    .ml-auto{
+        margin-left: 2rem!important;
+    }
+    .right-navbar .nav-item{
+        padding: 0.5rem 2rem;
+    }
+    .the-games-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .the-games-background{
+        grid-column: 1/2;
+        grid-row: 1/4;
+        width: 100%;
+        height: 100%;
+    }
+    .the-games-text{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-align:center;
+        margin: auto;
+    }
+    .the-games-item-container h2{
+        font-size: 8.29vw;/*1366x8.29=60.01*/
+    }
+    .the-games-carousel{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        margin: 0 auto 15vw;
+        width: 80%;
+        
+    }
+}
+@media screen and (max-width: 1050px){
+    .grid-item-container h1{
+        font-size: 7vw;
+    }
+
+}

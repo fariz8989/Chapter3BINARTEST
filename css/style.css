@@ -3,7 +3,8 @@ padding: 0;
 }
 .navbar{
     opacity: 0.8;
-   position: fixed;
+   position: absolute;
+   top: 0;
    width: 100%;
    background-color: black;
    padding: 5px 0;
@@ -67,14 +68,14 @@ padding: 0;
 }
 .grid-item-container h1{
     font-weight: bold;
-    font-size: 5.856vw; /*1366x5.856=*79.99*/
+    font-size: 80px; /*1366x5.856=*79.99*/
     margin: 0 0 30px;
     font-family: 'Bebas Neue', cursive;
 }
 .grid-item-container p{
     font-size: 24px;  /*1366x1.76=24.04*/
     font-family: 'Open Sans', sans-serif;
-    margin: 40px 0 50px;
+    margin: 20px 0 30px;
 }
 .grid-item-container button{
     background-color: #FFB343;
@@ -206,9 +207,14 @@ padding: 0;
         
     }
 }
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 700px){
     .grid-item-container h1{
-        font-size: 7vw;
+        font-size: 6vw;
+        
+    }
+    .grid-item-container{
+       position: relative;
+       top: 10vw;
     }
 
 }

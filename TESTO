@@ -1,0 +1,4 @@
+<form class="form-floating">
+<input type="email" class="form-control text-warning" id="floatingInputValue" placeholder="youremail@binar.co.id" value="youremail@binar.co.id">
+<label for="floatingInputValue" class="news-label">Your Email Adress</label>
+              </form>
